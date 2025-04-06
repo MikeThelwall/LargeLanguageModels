@@ -25,9 +25,9 @@ client = OpenAI(api_key='YOUR OPEN AI KEY HERE') ##  USE OF THIS PROGRAM ***WILL
 
 prompt_type = SIMPLE_PROMPT
         
-batch_file_root = r"C:\title_abs " 
-jsonl_file = r"C:\title_abstract.txt"
-system_file = r"C:\ChatGPT D instructions 12 July 2024.txt"
+batch_file_root = r"C:\title_abs "  #Start of filename of output batch file
+jsonl_file = r"C:\title_abstract.txt" #File of lines to be processed in format ID -tab- text. No double quotes, no lines can end in \. Unsual characters may cause Json errors. Check that any batch file created is valid with another file in this Github folder.
+system_file = r"C:\ChatGPT D instructions 12 July 2024.txt" # File of system instructions. Can contain newwlines.
 
 save_as_batch = True   
 batch_fine_tuning = False   
